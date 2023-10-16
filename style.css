@@ -1,0 +1,11 @@
+/* style.css */
+.carousel-item img {
+    max-width: 65% !important;
+    height: auto;
+}
+
+/* Add custom CSS to change carousel control buttons to black */
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+}
