@@ -25,6 +25,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          color="black"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,50 +76,42 @@
         </div>
       </div>
     </nav>
-    <!-- Wrap the carousel in a container with flexbox classes -->
-    <div class="container d-flex justify-content-center">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="20230701_181449.jpg"
-              class="d-block w-100"
-              alt="Council and Mary"
-            />
+    <!-- Create a container for your content with the gradient background -->
+    <div class="content-container">
+      <!-- Wrap the carousel in a container with flexbox classes -->
+      <div class="container d-flex justify-content-center">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="20230701_181449.jpg"
+                class="d-block w-100"
+                alt="Council and Mary"
+              />
+            </div>
+            <!-- ... (other carousel items) ... -->
           </div>
-          <div class="carousel-item">
-            <img
-              src="20230701_181056.jpg"
-              class="d-block w-100"
-              alt="Council and McGivney"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="20221008_112302.jpg"
-              class="d-block w-100"
-              alt="Men's Retreat"
-            />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+            style="color: black !important"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+            style="color: black !important"
+          >
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" ariahidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 

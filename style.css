@@ -1,11 +1,24 @@
 /* style.css */
-.carousel-item img {
-    max-width: 65% !important;
-    height: auto;
+/* ... (other styles) ... */
+
+/* Apply the gradient background to the content container */
+.content-container {
+    background: linear-gradient(to bottom, lightblue, darkblue);
+    height: 100%;
 }
 
-/* Add custom CSS to change carousel control buttons to black */
-.carousel-control-prev,
-.carousel-control-next {
-    color: black;
+/* Set the background for the entire navbar to match the content background */
+.navbar {
+    background: linear-gradient(to bottom, lightblue, darkblue);
+}
+
+/* Set the text color to dark for the entire navbar */
+.navbar a.navbar-brand,
+.navbar .nav-link {
+    color: black; /* Change text color to black */
+}
+
+/* Add a background color to the active navigation link */
+.navbar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
 }
