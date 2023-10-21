@@ -12,8 +12,16 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <style>
+      /* Custom styles for carousel images */
+      .carousel-inner img {
+        width: 400px;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
+<!-- Navigaton Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Kofc Council #15857</a>
@@ -25,6 +33,7 @@
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          color="black"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,7 +45,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+              <a class="nav-link" href="about.html">About Us/FAQs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://koc15857.square.site/"
@@ -75,50 +84,54 @@
         </div>
       </div>
     </nav>
-    <!-- Wrap the carousel in a container with flexbox classes -->
-    <div class="container d-flex justify-content-center">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="20230701_181449.jpg"
-              class="d-block w-100"
-              alt="Council and Mary"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="20230701_181056.jpg"
-              class="d-block w-100"
-              alt="Council and McGivney"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="20221008_112302.jpg"
-              class="d-block w-100"
-              alt="Men's Retreat"
-            />
-          </div>
+    <!-- Create a container for your content with the gradient background -->
+    <div class="content-container">
+      <!-- Wrap the carousel in a container with flexbox classes -->
+      <div class="container d-flex justify-content-center">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="20230701_181449.jpg"
+                class="d-block w-100"
+                alt="Council and Mary"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="20230701_181056.jpg"
+                class="d-block w-100"
+                alt="Council and McGivney"
+              />
+            </div>
+            <div class="carousel-item active">
+              <img
+                src="20221008_112302.jpg"
+                class="d-block w-100"
+                alt="Men's Retreat with Bear Woznick"
+              />
+            </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+            style="color: black !important"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+            style="color: black !important"
+          >
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" ariahidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
